@@ -1,0 +1,21 @@
+<div class="col-sm-3 sidenav">
+  <h4 id="person_name" class="ffsize2">
+    <i class="fa-regular fa-address-card" id="profile_pic"></i>
+    <%= student ? student.firstName + ' ' + student.lastName : 'No Name' %>
+  </h4>
+  <hr id="line" />
+  <ul class="nav nav-stacked ffsize">
+    <li class="li-hover"><a href="/homePage">Home</a></li>
+    <li><a href="/profile">Profile</a></li>
+    <li><a href="/messages">Messages</a></li>
+    <li><a href="/policy">Policy</a></li>
+  </ul>
+  <br />
+  <div class="input-group btn_position">
+    <h3>Get Room-mate</h3>
+    <p>Are you searching for a room-mate?</p>
+    <button class="btn btn-success">
+      <a id="post_btn" href="/check-auth?redirect=/postShare">Post</a>
+    </button>
+  </div>
+</div>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- this is for using google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- this is for adding css style -->
+    <link rel="stylesheet" href="sideNavBar.css" />
+    <link rel="stylesheet" href="headerNavBar.css" />
+    <link rel="stylesheet" href="homePage.css" />
+    <link rel="stylesheet" href="successRatePost.css" />
+  </head>
+
+  <body>
+    <!-- header nav bar -->
+    <%- include("layout/headerNavBar") %>
+
+    <!-- side nav bar -->
+    <%- include("layout/sideNavBar") %>
+
+    <!--popup window for unauthenticate person's login -->
+    <!-- Overlay to gray out the background -->
+    <div
+      class="overlay <%= userAuthenticationError ? 'alertVisible' : ''%>"
+      id="overlay"
+    ></div>
+    <div
+      class="alert <%= userAuthenticationError ? 'alertVisible' : ''%>"
+      id="alertBox"
+    >
+      <h2>Please Login!!!</h2>
+      <h3>Without login you can't do this activity.</h3>
+      <form action="/login" method="get">
+        <button class="btn btn-success btn-lg">Login</button>
+      </form>
+    </div>
+
+    <!-- home page content -->
+    <div class="contentBox">
+      <div id="contentBoxNavBar">
+        <div class="navElement" id="navElement1">
+          <a href="#contentBox1">Get Services</a>
+        </div>
+        |
+        <div class="navElement" id="navElement2">
+          <a href="#contentBox2">Find Seat</a>
+        </div>
+        |
+        <div class="navElement" id="navElement3">
+          <a href="#contentBox3" style="transition: transform 0.3s ease"
+            >Quick Find</a
+          >
+        </div>
+      </div>
+      <div id="contentBox1">
+        <div class="contentBoxHeading">
+          <img
+            src="images\browsing.png"
+            alt="***"
+            style="width: 70px; height: 70px"
+          />
+          <h3>Get Services</h3>
+          <p>
+            are you looking for a suitable rent room? Then choose and visit our
+            services.
+          </p>
+        </div>
+        <div class="contentBoxFeatures">
+          <div class="contentBoxFeaturesBox">cholo aksathe</div>
+          <div class="contentBoxFeaturesBox">
+            Total Seats Available
+            <div id="TotalSeatCount">
+              <div id="seatCounter"></div>
+              <!-- Empty div where the number will appear -->
+            </div>
+            <button
+              class="btn btn-default"
+              id="contentBoxFeaturesBoxButton"
+              onclick="window.location.href='/totalPostAvailable'"
+            >
+              View
+            </button>
+          </div>
+          <div class="contentBoxFeaturesBox">
+            Success Rate
+            <p>( Total People Seat Founded )</p>
+            <div id="TotalSeatFoundedByUsers">
+              <div id="seatCounterForSuccessRate">4</div>
+              <!-- Empty div where the number will appear -->
+            </div>
+            <button
+              class="btn btn-default"
+              id="contentBoxFeaturesBoxButton"
+              onclick="window.location.href='/successRateSee'"
+            >
+              View
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="contentBox2">
+        <div class="contentBoxHeading">
+          <img
+            src="images\location.png"
+            alt="***"
+            style="width: 70px; height: 70px"
+          />
+          <h3>Find Your Destination</h3>
+          <p>
+            are you looking for a suitable rent room? Then choose a rent renge.
+          </p>
+        </div>
+        <div class="seePostByFilteringAll">
+          <form action="/findSeatByFiltering" method="post">
+            <div class="seePostByFiltering" id="seePostByFiltering1">
+              <div class="inputForTakingRentRange">
+                <label for="x1">Enter first rent range</label>
+                <div>
+                  <input type="number" id="x1" name="renge1" required />
+                </div>
+              </div>
+              <div>
+                <img
+                  src="images\exchange.png"
+                  alt="---"
+                  style="width: 50px; height: 50px; margin-top: 20px"
+                />
+              </div>
+              <div class="inputForTakingRentRange">
+                <label for="x2">Enter last rent range</label>
+                <div>
+                  <input type="number" id="x2" name="renge2" required />
+                </div>
+              </div>
+            </div>
+            <div
+              class="seePostByFiltering styleForFilter2345"
+              id="seePostByFiltering2"
+            >
+              <img
+                src="images\down.png"
+                alt=""
+                style="width: 30px; height: 30px"
+              />
+            </div>
+            <div
+              class="seePostByFiltering styleForFilter2345"
+              id="seePostByFiltering3"
+            >
+              <label for="x3">Select your suitable location</label>
+              <div>
+                <select name="location" id="x3" required>
+                  <option value="Shewrapara">Shewrapara</option>
+                  <option value="Kazipara">Kazipara</option>
+                  <option value="Mirpur10">Mirpur10</option>
+                  <option value="narayanganj">narayanganj</option>
+                </select>
+              </div>
+            </div>
+            <div
+              class="seePostByFiltering styleForFilter2345"
+              id="seePostByFiltering4"
+            >
+              <img
+                src="images\down.png"
+                alt=""
+                style="width: 30px; height: 30px"
+              />
+            </div>
+            <div
+              class="seePostByFiltering styleForFilter2345"
+              id="seePostByFiltering5"
+            >
+              <input class="btn btn-danger btn-lg" type="submit" value="Go" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="contentBox3">
+        <div id="successRateFindingBox">
+          <div id="successRateFindingBoxTitle">Quick Find</div>
+          <div id="successRateFindingBoxDescription">
+            Give us a rent value and we will try to tell you the maximum
+            qualitiful <b>(star out of 5)</b> seats you can get within that
+            rent.
+          </div>
+          <div id="successRateFindingBoxValueTaking">
+            <form action="/x" method="post">
+              <input
+                type="number"
+                name="rentValue"
+                placeholder="enter a rent value"
+                class="btn btn-default"
+              />
+              <input type="submit" value="Predict" class="btn btn-success" />
+            </form>
+          </div>
+          <div id="successRateFindingBoxPredictionResult">4 star</div>
+          <div
+            id="successRateFindingBoxDescription"
+            style="color: rgb(107, 107, 107)"
+          >
+            According to your given range, most people are choosed "4 star"
+            ratting seats. So you can search for only 4 star rating posts. Thank
+            you.
+          </div>
+          <div id="successRateFindingBoxButton">view</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let counter = 1;
+      let maxSeats = <%= totalSeatAvailableLength %>;
+      let interval = 100; // 0.1 seconds
+
+      // Store the interval so we can stop it later
+      const intervalId = setInterval(updateSeatCounter, interval);
+
+      // Function to update the seat counter
+      function updateSeatCounter() {
+        const seatCounterDiv = document.getElementById("seatCounter");
+
+        // Update the displayed number
+        seatCounterDiv.innerText = counter;
+
+        // Increment the counter
+        counter++;
+
+        // Stop the interval if counter exceeds maxSeats
+        if (counter > maxSeats) {
+          clearInterval(intervalId);  // Stop the interval
+        }
+      }
+    </script>
+  </body>
+</html>

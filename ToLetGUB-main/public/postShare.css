@@ -1,0 +1,33 @@
+:root {
+  --greenColor: rgb(75, 189, 0);
+  --color2: #337ab7;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+/*form past designing*/
+.content {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.fontSize {
+  font-size: 20px;
+}
+.fontSize2 {
+  font-size: 16px;
+  margin-left: 10px;
+  color: rgb(145, 145, 145);
+}
+.facilities {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.form-control:hover {
+  outline: var(--greenColor);
+  border: 2px solid var(--greenColor);
+}

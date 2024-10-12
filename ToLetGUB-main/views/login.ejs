@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Log in</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- ei css file er moddhei login for er design kora ase-->
+    <link rel="stylesheet" href="headerNavBar.css" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+
+  <body>
+    <!-- header nav bar -->
+    <%- include("layout/headerNavBar") %>
+    <div class="container containerTwo">
+      <h1>Log in</h1>
+      <form action="/login?redirect=<%= redirect %>" method="post" id="form">
+        <div class="form-group">
+          <label for="email">Student Id:</label>
+          <input
+            type="text"
+            class="form-control input-lg size"
+            id="email"
+            placeholder="enter your student id"
+            name="studentId"
+          />
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input
+            type="password"
+            class="form-control input-lg size"
+            id="pwd"
+            placeholder="Enter password"
+            name="password"
+          />
+        </div>
+        <button type="submit" class="btn btn-success" id="btn">Log in</button>
+      </form>
+      <div id="text">
+        <span
+          >Do not have an account? please
+          <a href="/signup" style="color: rgb(0, 15, 228)">Sign in</a></span
+        >
+      </div>
+    </div>
+
+    <!-- Overlay to gray out the background -->
+    <div class="overlay <%= error ? 'alertVisible' : '' %>" id="overlay"></div>
+
+    <!-- Alert popup for incorrect login -->
+    <div class="alert <%= error ? 'alertVisible' : '' %>" id="alertBox">
+      <h2>Student Id or Password is incorrect.</h2>
+      <h3>Please login again!!!</h3>
+      <form action="/login" method="get">
+        <button class="btn btn-success btn-lg">Try Again</button>
+      </form>
+    </div>
+  </body>
+</html>

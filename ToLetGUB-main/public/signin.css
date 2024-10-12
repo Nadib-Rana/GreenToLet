@@ -1,0 +1,48 @@
+:root {
+  --greenColor: rgb(75, 189, 0);
+}
+.container h1 {
+  /* text-align: center; */
+  font-weight: bold;
+  color: var(--greenColor);
+}
+.size {
+  width: 800px;
+  resize: none;
+}
+.container {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 15px rgb(119, 119, 119);
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.user_name {
+  display: flex;
+  justify-content: space-between;
+}
+.wid {
+  width: 390px;
+}
+#btn {
+  width: 200px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  background-color: var(--greenColor);
+}
+#text {
+  margin-bottom: 40px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+#access {
+  text-decoration: none;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: white;
+}

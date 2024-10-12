@@ -1,0 +1,35 @@
+[1mdiff --git a/models/studentSchema.js b/models/studentSchema.js[m
+[1mindex 5adec8b..617d909 100644[m
+[1m--- a/models/studentSchema.js[m
+[1m+++ b/models/studentSchema.js[m
+[36m@@ -18,7 +18,6 @@[m [mconst studentInformationSchema = mongoose.Schema({[m
+     email:{[m
+         type: String,[m
+         require: true,[m
+[31m-        unique: true,[m
+     },[m
+     password:{[m
+         type: String,[m
+[36m@@ -27,7 +26,6 @@[m [mconst studentInformationSchema = mongoose.Schema({[m
+     phone:{[m
+         type: String,[m
+         require: true,[m
+[31m-        unique: true,[m
+     },[m
+     gender:{[m
+         type: String,[m
+[1mdiff --git a/routes/authRouters.js b/routes/authRouters.js[m
+[1mindex 583b18e..7f34a3a 100644[m
+[1m--- a/routes/authRouters.js[m
+[1m+++ b/routes/authRouters.js[m
+[36m@@ -42,8 +42,9 @@[m [mroute.post("/signup", async (req, res, next) => {[m
+ [m
+     //rendering in login.ejs page[m
+     console.log("Sign up succesful.");[m
+[31m-    res.status(200).render("login");[m
+[32m+[m[32m    res.status(200).render("login",{ error: false });[m
+   } catch (err) {[m
+[32m+[m[32m    console.log(err);[m
+     if (err.code === 11000) {[m
+       // Duplicate key error code[m
+       res[m

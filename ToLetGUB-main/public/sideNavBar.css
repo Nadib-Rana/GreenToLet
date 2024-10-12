@@ -1,0 +1,190 @@
+/* header part designed in the post_share.css file */
+:root {
+  --color: rgb(75, 189, 0);
+  --color2: #337ab7;
+}
+
+#logo_img {
+  /* background-color: white; */
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.content {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.row.content {
+  height: 1500px;
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  background-color: rgb(218, 255, 216);
+  height: 600px;
+  margin: 0px;
+  position: fixed;
+  top: 70px;
+  left: 0px;
+  z-index: 500;
+}
+
+/* 
+  post show part  
+---------------------------------------------------------
+*/
+#person_name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#line {
+  background-color: rgb(202, 202, 202);
+  height: 1px;
+}
+
+li a {
+  color: black;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+
+  .row.content {
+    height: auto;
+  }
+}
+
+.adjust {
+  margin: 0px;
+}
+#loguout {
+  height: 50px;
+  width: 100px;
+  background-color: white;
+  margin-right: 20px;
+}
+.btn_position {
+  border: 1px dashed #a5a5a5;
+  height: 200px;
+  width: 300px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main post area part start from here */
+.post_area {
+  height: fit-content;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgb(136, 136, 136);
+  width: 1000px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+}
+.top_area {
+  height: 50px;
+  background-color: oldlace;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.top_area img {
+  height: 30px;
+  width: 30px;
+}
+
+#p_head_color {
+  background-color: rgba(153, 255, 0, 0.644);
+}
+.post_post_area {
+  padding: 10px 20px 20px 20px;
+  width: 80%;
+}
+.post_button_area {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 20%;
+  background-color: #000000b8;
+}
+
+.post_button {
+  height: 25%;
+  transition: 0.5s;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.post_button:hover {
+  color: rgb(255, 255, 255);
+  border: 1px solid var(--color);
+  background-color: var(--color);
+
+  #like {
+    background-color: var(--color);
+  }
+}
+
+#like {
+  background-color: #535353b8;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+}
+
+.ffsize {
+  font-size: 16px;
+}
+
+.ffsize2 {
+  font-size: 24px;
+  padding-left: 15px;
+}
+
+.content_fs {
+  font-size: 18px;
+  font-weight: normal;
+  color: #3d3d3d;
+}
+
+#post_btn {
+  text-decoration: none;
+  color: white;
+}
+#profile_pic {
+  margin-right: 30px;
+}
+#h2_color {
+  color: var(--color2);
+}
+
+/* this will show when no result will found after filtering by range and location */
+#noSeatFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+#noSeatFound img {
+  height: 300px;
+  width: 300px;
+}

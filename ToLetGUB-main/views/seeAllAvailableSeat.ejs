@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>See Post</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- this is for using google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- this is for adding css style -->
+    <!-- ei css file ei post show part er css rakhci -->
+    <link rel="stylesheet" href="sideNavBar.css" />
+    <link rel="stylesheet" href="headerNavBar.css" />
+    <link rel="stylesheet" href="homePage.css" />
+  </head>
+
+  <body>
+    <!-- header nav bar -->
+    <%- include("layout/headerNavBar") %>
+
+    <!-- side nav bar -->
+    <%- include("layout/sideNavBar") %>
+
+    <!-- post page content -->
+    <div class="contentBox">
+      <!-- ei category range er post gula akta akta kore show korabo eita diye -->
+      <% totalSeatAvailable.forEach((post)=>{ %>
+      <div class="post_area">
+        <!-- starting post info heading -->
+        <div class="post_post_area">
+          <h2 id="h2_color">Seat availabe for male</h2>
+          <h5>
+            <span class="glyphicon glyphicon-time"></span>
+            Post by <%= student ? student.firstName + ' ' + student.lastName :
+            'an User' %>
+          </h5>
+          <h5>
+            <span class="label label-danger">Food</span>
+            <span class="label label-primary">Ipsum</span>
+          </h5>
+          <hr id="line" />
+
+          <div class="form-group row">
+            <label class="col-sm-11 col-form-label content_fs">
+              <i class="fa-solid fa-arrow-right"></i>
+              <!--eita icon-->
+              Total number of seat availabe</label
+            >
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-11 col-form-label content_fs">
+              <i class="fa-solid fa-arrow-right"></i>
+              <!--eita icon-->
+              Total number of seat availabe</label
+            >
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-11 col-form-label content_fs">
+              <i class="fa-solid fa-arrow-right"></i>
+              <!--eita icon-->
+              Total number of seat availabe</label
+            >
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-11 col-form-label content_fs">
+              <i class="fa-solid fa-arrow-right"></i>
+              <!--eita icon-->
+              Total number of seat availabe</label
+            >
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-11 col-form-label content_fs">
+              <i class="fa-solid fa-arrow-right"></i>
+              <!--eita icon-->
+              Total number of seat availabe</label
+            >
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-11 col-form-label content_fs">
+              <i class="fa-solid fa-arrow-right"></i>
+              <!--eita icon-->
+              Total number of seat availabe</label
+            >
+          </div>
+        </div>
+        <!-- end here post info showing  -->
+
+        <!-- starting feedback part -->
+        <div class="post_button_area">
+          <div class="post_button" id="post_button1">
+            <button id="like">
+              <i class="fa-regular fa-thumbs-up fa-2x"></i>
+            </button>
+            <span class="ffsize"
+              >People reviews <span id="likeNum">1</span><span>/</span
+              ><span id="dislikeNum">5</span></span
+            >
+          </div>
+          <div class="post_button" id="post_button2">
+            <i class="fa-regular fa-image fa-2x"></i
+            ><span class="ffsize">See photos</span>
+          </div>
+          <div class="post_button" id="post_button3">
+            <i class="fa-regular fa-comment-dots fa-2x"></i
+            ><span class="ffsize">Message</span>
+          </div>
+          <div class="post_button" id="post_button3">
+            <i class="fa-regular fa-comment-dots fa-2x"></i
+            ><span class="ffsize">Additional ditels</span>
+          </div>
+        </div>
+      </div>
+      <!-- here post area div is end -->
+
+      <% }) %>
+    </div>
+  </body>
+  <!-- ahsan new -->
+</html>

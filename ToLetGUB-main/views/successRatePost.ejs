@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>See Post</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- this is for using google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- this is for adding css style -->
+    <!-- ei css file ei post show part er css rakhci -->
+    <link rel="stylesheet" href="sideNavBar.css" />
+    <link rel="stylesheet" href="headerNavBar.css" />
+    <link rel="stylesheet" href="homePage.css" />
+    <!-- ei css file ei successRatePost.ejs part er css rakhci -->
+    <link rel="stylesheet" href="successRatePost.css" />
+  </head>
+
+  <body>
+    <!-- header nav bar -->
+    <%- include("layout/headerNavBar") %>
+
+    <!-- side nav bar -->
+    <%- include("layout/sideNavBar") %>
+
+    <!-- post page content -->
+    <div class="contentBox">
+      <!-- ei category range er post gula akta akta kore show korabo eita diye -->
+      <div class="post_area">
+        <div id="successRatetable">
+          <p>A list of seats that have been found</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Person Name</th>
+                <th>rent</th>
+                <th>rating</th>
+                <th>location</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ahsan</td>
+                <td>2230</td>
+                <td>4 star</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="successRateFindingBox">
+          <div id="successRateFindingBoxTitle">Quick Find</div>
+          <div id="successRateFindingBoxDescription">
+            Give us a rent value and we will try to tell you the maximum
+            qualitiful <b>(star out of 5)</b> seats you can get within that
+            rent.
+          </div>
+          <div id="successRateFindingBoxValueTaking">
+            <form action="/x" method="post">
+              <input
+                type="number"
+                name="rentValue"
+                placeholder="enter a rent value"
+                class="btn btn-default"
+              />
+              <input type="submit" value="Predict" class="btn btn-success" />
+            </form>
+          </div>
+          <div id="successRateFindingBoxPredictionResult">4 star</div>
+          <div
+            id="successRateFindingBoxDescription"
+            style="color: rgb(107, 107, 107)"
+          >
+            According to your given range, most people are choosed "4 star"
+            ratting seats. So you can search for only 4 star rating posts. Thank
+            you.
+          </div>
+          <div id="successRateFindingBoxButton">view</div>
+        </div>
+      </div>
+      <!-- here post area div is end -->
+    </div>
+  </body>
+  <!-- ahsan new -->
+</html>

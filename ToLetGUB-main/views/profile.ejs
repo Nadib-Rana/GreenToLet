@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="postShare.css">
+    <link rel="stylesheet" href="sideNavBar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .profile_area2{
+            background-color: #d6fcaa;
+    height: 520px;
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+        }
+        #box1{
+            height: 80%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #box11{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: white;
+            border: 5px solid greenyellow;
+        }
+        #box2{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+    <link rel="stylesheet" href="headerNavBar.css">
+
+</head>
+
+<body>
+    <!-- header nav bar -->
+    <%- include("layout/headerNavBar") %>
+
+
+    <div class="content">
+        <div class="container-fluid" style="padding-left: 0px;">
+            <div class="row content adjust">
+                <!-- side nav bar -->
+                 <%- include("layout/sideNavBar") %>
+
+                <div class="col-sm-9">
+                    <div class="post_area profile_area">
+                        <div class="profile_area2">
+                            <div class="box" id="box1">
+                                <div id="box11">
+                                    <!-- user profile picture part -->
+
+                                </div>
+                            </div>
+                            <div class="box" id="box2">
+                                <!-- user info part -->
+                                <h2><%= student.firstName %> <%= student.lastName %></h2>
+                                <h3>Student Id : <%= student.studentId %></h3>
+                                <h3>Email : <%= student.email %></h3>
+                                <h3>Phone : <%= student.phone %></h3>
+                                <h3>Gender : <%= student.gender %></h3>
+                                <h3>Department : <%= student.department %></h3>
+                                <h3>Batch : <%= student.batch %></h3>
+                                <h3>First reg. date : <%= student.registrationDate %></h3>
+                                <p>this is from student post ------------- <%= studentPost.entryMonth %> <%= studentPost.entryMonth %></p>
+                                
+
+
+
+                                <!-- jehetu student post er vitor onek gula post thakbe tai eitake handle korte hole forEach loop use korte hobe -->
+                                <% if (studentPost && studentPost.length > 0){ %>
+                                    <% studentPost.forEach(function(post){ %>
+                                        <h3>Posts:</h3>
+                                        <p><%= post.title %></p>
+                                        <p><%= post.seat %></p>
+                                        <p><%= post.entryMonth %></p>
+                                    <% }) %>
+                                <% }else{ %>
+                                    <p>Nothing found in that.</p>
+                                <% } %>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<div class="fullHeader">
+  <div class="header">
+    <div id="logo">
+      <img src="Project logo.png" alt="" id="logo_img" />
+      <h1><strong>To-let</strong>Green University</h1>
+    </div>
+    <div id="search">
+      <form>
+        <div class="input-group <%= student ? 'logoutVisible' : ''%>">
+          <input type="text" class="form-control" placeholder="Search" />
+          <div class="input-group-btn">
+            <button class="btn btn-success" type="submit">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="logout <%= student ? 'logoutVisible' : ''%>">
+    <form method="post" action="/logout">
+      <button class="btn btn-danger" type="submit">Log out</button>
+    </form>
+  </div>
+</div>
