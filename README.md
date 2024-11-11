@@ -163,3 +163,22 @@
    - For error logging and performance monitoring in real-time.
 
 
+### **High-Level Architecture Diagram**
+
+```
++-------------------+       +---------------------+       +-------------------+
+|    Frontend (UI)  | <---> |   Backend (API)     | <---> |     Database      |
+|  React.js, HTML,  |       | Node.js, Express.js |       |   MongoDB         |
+|  CSS, Redux       |       | JWT, Socket.IO      |       |   MongoDB Atlas   |
++-------------------+       +---------------------+       +-------------------+
+      |                           |                          |
+      |       +------------------+ |       +----------------+ |      
+      |       |  Real-Time Chat   | |       |   Service API  | |       
+      |       |   & Notifications | |       |   Payment API  | |
+      |       +------------------+ |       +----------------+ |       
+      +---------------------------+       +------------------+
+```
+
+
+
+
