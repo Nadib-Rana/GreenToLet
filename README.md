@@ -278,6 +278,78 @@
       +---------------------------+       +------------------+
 ```
 
+---
+
+### **Use Case Diagram for University Service-based Website**
+
+```plaintext
+                                    +---------------------+
+                                    |        Guest        |
+                                    +---------------------+
+                                              |
+                            +-----------------+------------------+
+                            |                                    |
+                 +------------------+                      +------------------+
+                 |  Browse Services |                      |  Login / Sign Up |
+                 +------------------+                      +------------------+
+                            |                                    |
+                    +-------------------+             +--------------------------+
+                    |  Service Details  |             |   Registered User        |
+                    +-------------------+             +--------------------------+
+                            |                                    |
+                 +---------------------------+        +-------------------------------+
+                 |   Booking / Order Page    |        |   Post Lost & Found Page       |
+                 +---------------------------+        +-------------------------------+
+                            |                                    |
+                      +---------------------+         +---------------------------+
+                      |   Payment Page       |         |   Profile Page            |
+                      +---------------------+         +---------------------------+
+                            |                                    |
+                     +-----------------------+           +---------------------------+
+                     |  Search Results Page  |           |  Dashboard Page           |
+                     +-----------------------+           +---------------------------+
+                            |                                    |
+               +-----------------------------+     +----------------------------+
+               |    Help / FAQ Page          |     |    Admin Dashboard Page    |
+               +-----------------------------+     +----------------------------+
+                                                       |
+                                              +------------------------+
+                                              | Admin Service Management|
+                                              +------------------------+
+                                                       |
+                                              +------------------------+
+                                              | Reports Page           |
+                                              +------------------------+
+```
+
+---
+
+### **Actors and Use Cases Breakdown:**
+
+#### **1. Guest** 🧑‍💼
+- **Browse Services**: View available services like Tolet, Meals, Lost & Found, Printing, Food Delivery.
+- **Login / Sign Up**: Create an account or log in to access personalized services.
+
+#### **2. Registered User** 🧑‍💻
+- **Service Details**: View detailed service information.
+- **Booking / Order Page**: Book or order a service (e.g., rent a room, order food).
+- **Post Lost & Found**: Post information about lost or found items.
+- **Payment**: Process payments for services.
+- **Profile**: Manage user profile and preferences.
+- **Search Results**: View filtered or searched results for services.
+- **Dashboard**: Overview of user activities and quick access to services.
+
+#### **3. Admin** 👨‍💻
+- **Admin Dashboard**: Manage platform activities and user data.
+- **Admin Service Management**: Add, update, or delete service listings.
+- **Reports**: Generate usage and financial reports for the platform.
+
+---
+
+### **Diagram Explanation:**
+- **Guest** can browse services and sign up for an account.
+- **Registered User** can access most of the services such as viewing service details, booking services, managing profiles, making payments, and viewing search results.
+- **Admin** has control over managing services, viewing reports, and handling user activities.
 
 
 
