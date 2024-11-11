@@ -346,10 +346,5 @@
 
 ---
 
-### **Diagram Explanation:**
-- **Guest** can browse services and sign up for an account.
-- **Registered User** can access most of the services such as viewing service details, booking services, managing profiles, making payments, and viewing search results.
-- **Admin** has control over managing services, viewing reports, and handling user activities.
-
 
 
