@@ -100,5 +100,66 @@
     - Regular backups should be performed to ensure data recovery in case of failure.
 
 ---
+**Tools & Technology** 
+
+### **Frontend**  
+1. **⚛️ React.js**  
+   - For building a dynamic, responsive user interface.
+2. **📄 HTML5**  
+   - For structuring the web content.
+3. **🎨 CSS3**  
+   - For styling and creating visually appealing designs.
+4. **🧱 Bootstrap**  
+   - For responsive design and pre-built components.
+5. **🔄 Redux**  
+   - For state management in React applications.
+
+### **Backend**  
+1. **🐢 Node.js**  
+   - Server-side JavaScript runtime for building scalable web applications.
+2. **🛠️ Express.js**  
+   - Framework for building web servers and APIs in Node.js.
+3. **📦 MongoDB**  
+   - NoSQL database for storing service-related data like room bookings, meals, and user profiles.
+4. **🐱 Mongoose**  
+   - ODM (Object Data Modeling) library for MongoDB to handle database interactions.
+
+### **Authentication & Security**  
+1. **🔐 JWT (JSON Web Tokens)**  
+   - For secure user authentication and token-based session management.
+2. **🛡️ bcrypt.js**  
+   - For password hashing to enhance security.
+3. **🔗 OAuth2**  
+   - For social media login options (Google, Facebook, etc.).
+4. **🔒 SSL/TLS Encryption**  
+   - For ensuring secure data transmission between the server and clients.
+
+### **Payment Integration**  
+1. **💳 Stripe or PayPal API**  
+   - For processing payments for services like meals, printing, and room bookings.
+
+### **Real-time Communication**  
+1. **⚡ Socket.IO**  
+   - For enabling real-time features like live chat or notifications.
+
+### **Deployment & Hosting**  
+1. **🚀 Heroku**  
+   - For hosting the backend server and app.
+2. **🌐 Netlify or Vercel**  
+   - For hosting the frontend (React app).
+3. **💾 MongoDB Atlas**  
+   - For cloud-hosted MongoDB database management.
+
+### **Version Control & Collaboration**  
+1. **📂 Git**  
+   - For version control and collaboration in the development process.
+2. **🐙 GitHub or GitLab**  
+   - For repository hosting, collaboration, and project management.
+
+### **Analytics & Monitoring**  
+1. **📊 Google Analytics**  
+   - For tracking user behavior and interactions on the site.
+2. **💻 LogRocket**  
+   - For error logging and performance monitoring in real-time.
 
 
