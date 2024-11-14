@@ -95,6 +95,8 @@
 
 10. **Backup and Recovery**
     - Regular backups should be performed to ensure data recovery in case of failure.
+11. **cheating**
+     - student to student
 
 ---
 **Tools & Technology** 
