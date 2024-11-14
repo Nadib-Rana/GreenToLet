@@ -12,8 +12,8 @@
 10. **💬 Live Chat**: Real-time support for inquiries and issues.
 11. **📍 Location-Based Services**: Show nearby services like food delivery or housing.
 12. **💳 Integrated Payment Wallet**: Wallet system for meal and printing payments.
-13. ** Success Rate **: Admin can see how many student become facilated from this application.
-14. ** Buy & Sell **: Student can buy and sell their unused or used products.
+13. **Success Rate**: Admin can see how many student become facilated from this application.
+14. **Buy & Sell**: Student can buy and sell their unused or used products.
 
 
 ### **Functional Requirements**
