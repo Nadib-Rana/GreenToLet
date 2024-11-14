@@ -12,15 +12,17 @@
 10. **💬 Live Chat**: Real-time support for inquiries and issues.
 11. **📍 Location-Based Services**: Show nearby services like food delivery or housing.
 12. **💳 Integrated Payment Wallet**: Wallet system for meal and printing payments.
+13. ** Success Rate **: Admin can see how many student become facilated from this application.
+14. ** Buy & Sell **: Student can buy and sell their unused or used products.
 
 
 ### **Functional Requirements**
 
-1. **User Registration and Login**
+1. **User Registration and Login (Authentication)**
    - Students and staff must be able to create accounts, log in, and manage profiles.
 
 2. **Service Listings**
-   - Display listings for services like housing (ToLet), meals, printing, food delivery, and lost & found.
+   - Display listings for services like housing (ToLet), meals, printing and lost & found.
    
 3. **Search and Filters**
    - Users should be able to search and filter listings by category, location, price, rating, etc.
@@ -34,29 +36,29 @@
 6. **Lost & Found**
    - Users can report lost items and check if they have been found.
 
-7. **Food Delivery**
-   - Users can order food from various vendors, track delivery status, and pay online.
-
-8. **Review and Rating System**
+7. **Review and Rating System**
    - Users can rate and review services such as meals, rooms, and vendors.
 
-9. **Admin Management**
+8. **Admin Management**
    - Admin can manage users, approve service providers, and moderate content.
 
-10. **Notifications**
+9. **Notifications**
     - Users receive notifications for updates like room booking confirmations, meal deliveries, and lost item status.
 
-11. **Payment System**
+10. **Payment System**
     - Integration with a payment gateway for meal and printing services.
 
-12. **Multi-Campus Support**
+11. **Multi-Campus Support**
     - Services should be filterable based on campus location.
 
-13. **Service Subscription**
+12. **Service Subscription**
     - Allow students to subscribe to services like meal plans and printing subscriptions.
 
-14. **Reports and Analytics**
+13. **Reports and Analytics**
     - Admin should be able to generate reports on service usage, payments, and user feedback.
+      
+14. **Buy & Sell**
+    - Student can buy and sell their unused or used products.
 
 ---
 
@@ -102,7 +104,7 @@
 **Tools & Technology** 
 
 ### **Frontend**  
-1. **⚛️ js**  
+1. **⚛️ JavaScript**  
    - For building a dynamic, responsive user interface.
 2. **📄 HTML**  
    - For structuring the web content.
@@ -147,7 +149,7 @@
 ### **Version Control & Collaboration**  
 1. **📂 Git**  
    - For version control and collaboration in the development process.
-2. **🐙 GitHub or GitLab**  
+2. **🐙 GitHub**  
    - For repository hosting, collaboration, and project management.
 
 ### **Analytics & Monitoring**  
@@ -162,22 +164,22 @@
 ---
 
 ### 1. **Home Page** 🏠  
-- **Overview of Services**: Show all services such as **Tolet**, **Meal**, **Lost & Found**, **Printing**, **Food Delivery**.  
-- **Navigation**: Easy access to all sections via a menu.  
+- **Overview of Services**: Show all services such as **Tolet**, **Meal**, **Lost & Found**, **Printing**, **Buy & Sell**.  
+- **Navigation**: Easy access to all sections via a menu. Both authenticated and unauthenticated user can visit this.  
 - **Login/Sign-Up**: Display user authentication options for quick access.
 
 ---
 
 ### 2. **Login/Signup Page** 🔑  
-- **User Registration & Authentication**: Allow users to sign up with email or login.  
-- **Security**: Password and email validation for secure logins.  
+- **User Registration & Authentication**: Allow users to sign up with StudentID or login.  
+- **Security**: Password and studentID validation for secure logins.  
 - **Redirection**: Redirect users to the **Dashboard** after successful login.
 
 ---
 
 ### 3. **Dashboard Page** 🧑‍💻  
 - **User Profile**: Display profile information, including **booking history** and service usage.  
-- **Quick Access**: Allow easy navigation to services like **Tolet** and **Food Delivery**.  
+- **Quick Access**: Allow easy navigation to services like **Tolet**, **Lost & Found** and **Buy & Sell**.  
 - **Settings**: Users can update their personal details.
 
 ---
@@ -190,7 +192,7 @@
 ---
 
 ### 5. **Meal Services Page** 🍔  
-- **Menu Display**: Show a variety of meals (breakfast, lunch, dinner, snacks).  
+- **Menu Display**: Show a variety of meals (breakfast, lunch, dinner) to the nearest university student's hostel or room.  
 - **Order Cart**: Allow users to add meals to their cart.  
 - **Details & Payment**: Provide meal descriptions and prices with payment options.
 
@@ -211,10 +213,9 @@
 
 ---
 
-### 8. **Food Delivery Page** 🍕  
-- **Restaurant Listings**: Display available restaurants and food services.  
+### 8. **Buy & Sell** 🍕  
 - **Menu Options**: Show menus with prices and details.  
-- **Order & Delivery**: Allow users to order food and choose delivery time.  
+- **Order & Delivery**: Allow users to order products and choose delivery time.  
 - **Payment**: Provide secure online payment options.
 
 ---
@@ -247,11 +248,6 @@
 
 ---
 
-**Design Suggestions**:
-- Use **interactive icons** for each feature (e.g., **search** icon for searching, **cart** icon for meal orders).
-- **Hover Effects** on buttons and links for a smooth user experience.
-- **Animations** on service listings (like rooms or food items) to make the site visually appealing.
-- Clean, **minimalistic design** with **color-coded sections** for easy navigation.
 
 
 
