@@ -102,16 +102,14 @@
 **Tools & Technology** 
 
 ### **Frontend**  
-1. **⚛️ React.js**  
+1. **⚛️ js**  
    - For building a dynamic, responsive user interface.
-2. **📄 HTML5**  
+2. **📄 HTML**  
    - For structuring the web content.
 3. **🎨 CSS3**  
    - For styling and creating visually appealing designs.
 4. **🧱 Bootstrap**  
    - For responsive design and pre-built components.
-5. **🔄 Redux**  
-   - For state management in React applications.
 
 ### **Backend**  
 1. **🐢 Node.js**  
@@ -128,11 +126,8 @@
    - For secure user authentication and token-based session management.
 2. **🛡️ bcrypt.js**  
    - For password hashing to enhance security.
-3. **🔗 OAuth2**  
-   - For social media login options (Google, Facebook, etc.).
-4. **🔒 SSL/TLS Encryption**  
-   - For ensuring secure data transmission between the server and clients.
 
+----------------------------------------------------------------------------------------------------------------------------------------
 ### **Payment Integration**  
 1. **💳 Stripe or PayPal API**  
    - For processing payments for services like meals, printing, and room bookings.
