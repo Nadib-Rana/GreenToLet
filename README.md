@@ -6,15 +6,12 @@
 4. **⭐ Student Reviews & Ratings**: Rate housing, meals, and services.
 5. **🍽️ Meal Subscription**: Meal plan subscriptions with customization options.
 6. **🔍 Lost Item Alerts**: Notify when a lost item is found.
-7. **💸 Discounts & Coupons**: Special offers for printing and food delivery.
-8. **🏫 Multi-Campus Support**: Filter services by campus location.
-9. **🔔 Notifications**: Real-time notifications for orders, bookings, and lost items.
-10. **🛠️ Admin Dashboard**: Admin panel for service management, analytics, and user oversight.
-11. **💬 Live Chat**: Real-time support for inquiries and issues.
-12. **📍 Location-Based Services**: Show nearby services like food delivery or housing.
-13. **💳 Integrated Payment Wallet**: Wallet system for meal and printing payments.
-14. **📱 Social Media Integration**: Share content and log in via social platforms.
-15. **🌐 Multi-Language Support**: Support for multiple languages.
+7. **🏫 Multi-Campus Support**: Filter services by campus location.
+8. **🔔 Notifications**: Real-time notifications for orders, bookings, and lost items.
+9. **🛠️ Admin Dashboard**: Admin panel for service management, analytics, and user oversight.
+10. **💬 Live Chat**: Real-time support for inquiries and issues.
+11. **📍 Location-Based Services**: Show nearby services like food delivery or housing.
+12. **💳 Integrated Payment Wallet**: Wallet system for meal and printing payments.
 
 
 ### **Functional Requirements**
