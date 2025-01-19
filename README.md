@@ -1,19 +1,14 @@
 ### **Features with Icons**
-
-1. **🗣️ Student Forum**: Discussion boards for housing, meals, and events.
-2. **📅 Event Calendar**: Display university events with RSVP and notifications.
-3. **🏠 Room Booking**: Real-time room or study space booking system.
-4. **⭐ Student Reviews & Ratings**: Rate housing, meals, and services.
-5. **🍽️ Meal Subscription**: Meal plan subscriptions with customization options.
-6. **🔍 Lost Item Alerts**: Notify when a lost item is found.
-7. **🏫 Multi-Campus Support**: Filter services by campus location.
-8. **🔔 Notifications**: Real-time notifications for orders, bookings, and lost items.
-9. **🛠️ Admin Dashboard**: Admin panel for service management, analytics, and user oversight.
-10. **💬 Live Chat**: Real-time support for inquiries and issues.
-11. **📍 Location-Based Services**: Show nearby services like food delivery or housing.
-12. **💳 Integrated Payment Wallet**: Wallet system for meal and printing payments.
-13. **Success Rate**: Admin can see how many student become facilated from this application.
-14. **Buy & Sell**: Student can buy and sell their unused or used products.
+. **🏠 Room Booking**: Real-time room or study space booking system.
+. **⭐ Student Reviews & Ratings**: Rate housing, meals, and services.
+. **🍽️ Meal Subscription**: Meal plan subscriptions with customization options.
+. **🔍 Lost Item Alerts**: Notify when a lost item is found.
+. **🔔 Notifications**: Real-time notifications for orders, bookings, and lost items.
+. **🛠️ Admin Dashboard**: Admin panel for service management, analytics, and user oversight.
+. **💬 Live Chat**: Real-time support for inquiries and issues.
+. **📍 Location-Based Services**: Show nearby services like food delivery or housing.
+. **💳 Integrated Payment Wallet**: Wallet system for meal and printing payments.
+. **Buy & Sell**: Student can buy and sell their unused or used products.
 
 
 ### **Functional Requirements**
